@@ -1,0 +1,131 @@
+:root {
+    --background-color: #242629;
+    --secondary-color: #94a1b2;
+    --highlight-color: #7f5af0;
+    --font-color-primary: #fffffe;
+    --footer-background-color: rgb(20, 20, 20);
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    margin-bottom: 0;
+    color: var(--font-color-primary);
+    text-align: center;
+    transition: none;
+}
+
+.headline{
+    color: var(--font-color-primary);
+    text-align: center;
+    margin-top: 8%;
+}
+
+.secondheadline{
+    margin-top: 7%;
+    text-align: center;
+    color: var(--font-color-primary);
+}
+
+.inputfielddiv{
+    display: flex;
+    justify-content: center;
+}
+
+.inputfield{
+    align-self: center;
+    background-color: var(--secondary-color);
+    font-size: xx-large;
+    border-radius: 30px;
+    transition: 0.4s;
+    border: var(--highlight-color) solid 2px;
+}
+
+.inputfield:active{
+    text-decoration: none;
+}
+
+#hints{
+    display: block;
+    height: 4%;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    color:red;
+}
+
+.bothbuttons{
+    display: block;
+}
+
+.backbutton {
+    margin-bottom:2%;
+    background: var(--background-color);
+    color: var(--font-color-primary);
+    font-size: large;
+    padding: 10px;
+    border-radius: 100px;
+    transition: 0.4s;
+    border: var(--highlight-color) solid 3px;
+}
+
+.backbutton:hover {
+    background: var(--highlight-color);
+}
+
+#user-name{
+    text-align: center;
+    color: black;
+    font-size: medium;
+    padding: 0.5em;
+}
+
+#user-name:focus-visible {
+    text-align: center;
+    outline-color: var(--highlight-color);
+    transition: none;
+    border: none;
+  }
+  
+  
+.footer{
+    border-top: 5px;
+    border-color: var(--highlight-color);
+    border-style: solid;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    position:sticky;
+    color:var(--font-color-primary);
+    margin-top: 5%;
+    background-color: var(--footer-background-color);
+    height: 10em;
+}
+
+  .footercontent{
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+    padding-bottom: auto;
+}
+
+.link{
+    margin-right: 12%;
+    margin-left: 12%
+}
+
+.linktext{
+    text-decoration: none;
+    color: var(--font-color-primary);
+}
+
+.linktext:hover{
+    color: var(--highlight-color);
+}
+
+  /* Stil für das Nachrichtenfeld */
+  #message {
+    margin-top: 10px; /* Abstand nach oben */
+    padding: 10px; /* Innenabstand */
+    background-color: var(--background-color); /* Dunkler Hintergrund */
+    color: red;
+  }

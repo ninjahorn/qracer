@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QRacer Scanpage</title>
+    <link rel="stylesheet" href="qrcode.css">
+</head>
+<body>
+<h1 class="headline">Glückwunsch, du hast einen QR-Code gefunden</h1><br>
+<h1 class="headline">Gönn dir die Punkte!</h1>
+
+<h2 class="secondheadline">Nutzername eingeben:</h2>
+<div class="inputfielddiv">
+<form>
+<label>
+<input type="text" name="user-name" id="user-name" class="inputfield" maxlength="14" pattern="[0-9a-z]*">
+</label>
+</div>
+<div id="hints">
+<p id="hintUsername">Hinweis: Merke dir deinen Nutzernamen!!</p>
+<p id="wronginput"></p>
+<div id="message"></div>
+</div>
+<div class="bothbuttons">
+<div>
+<button type="button" class="backbutton" id="getPointButton">Get Point!</button>
+</div>
+</form>
+<div>
+<button class="backbutton" onclick="window.location.href = 'help.html';">Help!</button>
+<button class="backbutton" onclick="window.location.href = 'mainpage.html';">Hauptseite</button>
+</div>
+</div>
+<footer class="footer">
+    <div class="footercontent">
+    <div class="link">
+    <a class="linktext">Impressum</a>
+    </div>
+    <div class="link">
+    <a class="linktext" onclick="window.location.href = 'kontakt.html';">Kontakt</a>
+    </div>
+    <div class="link">
+    <i class="fa-brands fa-instagram"></i>
+    <a href="https://www.instagram.com/d_aniel.gt/" class="linktext" >Instagram</a>
+    </div>
+    </div>
+    </footer>
+    <script src="qrcode.js"></script>
+</body>
